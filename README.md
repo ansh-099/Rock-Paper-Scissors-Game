@@ -26,3 +26,4 @@ $ jupyter nbconvert --to python3 train_model.ipynb
 ```sh
 $ python3 play_game.py
 ```
+
