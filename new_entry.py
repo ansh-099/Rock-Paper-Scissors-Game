@@ -33,7 +33,7 @@ def new_entry(move):
             path = f'dataset/{move}/{counter}.png'
             cv2.imwrite(path, threshold)
 
-            print(f'move no: {counter}')
+            print(f'move: {counter}')
             counter = counter + 1
         elif key & 0xFF == ord('q'):
             break

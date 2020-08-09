@@ -30,7 +30,7 @@ def print_result(num):
     elif num == 1:
         return("Rock")
     elif num == 2:
-        return("Scissor")
+        return("Scissors")
     else:
         return("Please Try Again")
 
