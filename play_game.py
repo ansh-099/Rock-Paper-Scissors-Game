@@ -83,8 +83,8 @@ while(True):
     cv2.resizeWindow('Game: Place your move in box and press "n". To quit press "q"', (800, 1200))
     cv2.imshow('Threshold', threshold)
     cv2.imshow('Game: Place your move in box and press "n". To quit press "q"', frame)
-    cv2.moveWindow('Threshold', 20,20);
-    cv2.moveWindow('Game: Place your move in box and press "n". To quit press "q"', 500,0);
+#     cv2.moveWindow('Threshold', 20,20);
+#     cv2.moveWindow('Game: Place your move in box and press "n". To quit press "q"', 500,0);
     
 # Finished playing
 capture.release()
