@@ -25,13 +25,13 @@ def new_entry(move):
         cv2.rectangle(frame,(500,200),(900,600),(0,0,255),3)    
         
         hsv = cv2.cvtColor(r, cv2.COLOR_BGR2HSV)
-        mask = cv2.inRange(hsv, np.array([2, 50, 60]), np.array([25, 150, 255]))   
+        threshold = cv2.inRange(hsv, np.array([2, 50, 60]), np.array([25, 150, 255]))   
         
 
         key = cv2.waitKey(1)
         if key & 0xFF == ord('n'):
             path = f'dataset/{move}/{counter}.png'
-            cv2.imwrite(path, mask)
+            cv2.imwrite(path, threshold)
 
             print(f'move no: {counter}')
             counter = counter + 1
@@ -40,7 +40,7 @@ def new_entry(move):
 
         cv2.namedWindow('Image ("n" to add move, "q" to exit)', cv2.WINDOW_NORMAL)
         cv2.resizeWindow('Image ("n" to add move, "q" to exit)', (800, 1200))
-        cv2.imshow('Threshold', mask)
+        cv2.imshow('Threshold', threshold)
         cv2.imshow('Image ("n" to add move, "q" to exit)', frame)
         cv2.moveWindow('Threshold', 20,20);
         cv2.moveWindow('Image ("n" to add move, "q" to exit)', 500,0);
