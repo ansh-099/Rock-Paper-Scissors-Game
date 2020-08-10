@@ -27,4 +27,4 @@ $ jupyter nbconvert --to python3 train_model.ipynb
 $ python3 play_game.py
 ```
 </br>
-Find documentation -  [OpenCV](https://github.com/opencv/opencv)
+Find documentation -  [OpenCV](https://docs.opencv.org/master/d9/df8/tutorial_root.html)
