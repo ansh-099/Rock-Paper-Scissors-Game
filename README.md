@@ -32,3 +32,5 @@ $ python3 play_game.py
 ```
 
 Find documentation -  [OpenCV](https://docs.opencv.org/master/d9/df8/tutorial_root.html)
+
+Cheers!
